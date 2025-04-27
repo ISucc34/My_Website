@@ -1,0 +1,7 @@
+{
+  "services": [
+    {"name": "Web Design", "price": "$500"},
+    {"name": "Graphic Design", "price": "$300"},
+    {"name": "SEO Optimization", "price": "$400"}
+  ]
+}
