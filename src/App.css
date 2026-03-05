@@ -5,9 +5,26 @@
   text-align: center;
 }
 
+.logoContainer{
+  background-color:#222028;
+  background-image: radial-gradient(rgb(0, 0, 0),rgbx(37, 37, 45));
+  border: 1px none;
+  border-radius: 10px;
+  border-width: 10px;
+  border-color: rgb(170, 170, 170);
+  height: 4em;
+}
+.logoContainer:hover{
+  box-shadow:0 0 40px #b464ffaa;
+  border-color: rgb(230, 222, 222);
+
+  transition: box-shadow 300ms;
+  
+}
+
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 4em;
+  padding: 1em;
   will-change: filter;
   transition: filter 300ms;
 }
