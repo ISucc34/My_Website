@@ -8,12 +8,15 @@ import './App.css'
 
 function App() {
 
-  const logos = [
+  const Techlogos = [
     { name: 'TensorFlow', src: TfLogo },
     { name: 'PyCharm', src: pyCharmLogo },
     { name: 'Git', src: gitLogo },
-    { name: 'GitHub', src: githubLogo },
     { name: 'VS Code', src: vsCodeLogo},
+  ]
+
+  const Socials = [
+    { name: 'GitHub', src: githubLogo },
   ]
 
 
@@ -22,9 +25,9 @@ function App() {
       <div>
         <h1>Isaac's Portfolio</h1>
 
-        <h2>Technologies</h2>
+        <h2>Libraries & Frameworks</h2>
         <div className="logos-container">
-          {logos.map((logo) => (
+          {Techlogos.map((logo) => (
             <div key={logo.name}>
               <img src={logo.src} className='logo' alt={`${logo.name} logo`} />
             </div>
@@ -33,12 +36,21 @@ function App() {
 
 
 
-        <h2>Libraries/Frameworks</h2>
+        <h2>Technologies</h2>
+        
         <h2> Projects</h2>
 
+
+        <h3>Contact</h3>
+        <div className="logos-container">
+          {Socials.map((social) => 
+          <div key={social.name}>
+            <img src={social.src} className="logo" alt={`${social.name} logo`}/>
+          </div>)}
+        </div>
+         
       </div>
       
-
     </>
   )
 }
