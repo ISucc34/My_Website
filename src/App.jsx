@@ -24,7 +24,9 @@ function App() {
 
   //Add projects that you want to show you diry little dissapointment
   const projects = [
-    {name: "Linear Algbra Library"},
+    {name: "Linear Algbra Library" , src: "https://github.com/ISucc34/LinAlgLibrary"},
+    {name: "Cougar AI Workshops", src: "https://github.com/ISucc34/CougarAI_Workshops"},
+    {name: "Portfolio", src: "https://github.com/ISucc34/My_Website"}
   ]
   
 
