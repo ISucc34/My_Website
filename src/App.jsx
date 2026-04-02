@@ -21,6 +21,11 @@ function App() {
   const techLogos =[
 
   ]
+
+  //Add projects that you want to show you diry little dissapointment
+  const projects = [
+    {name: "Linear Algbra Library"},
+  ]
   
 
   const Socials = [
@@ -50,7 +55,7 @@ function App() {
         <h2>Projects</h2>
         
         <div className='projects'>
-          <div >
+          <div className='imageCard'>
             <img src="Unkown.png"/> 
           </div>
           <h3>Linear Algebra Library</h3>
@@ -59,7 +64,7 @@ function App() {
         
 
 
-        <h3>Contact</h3>
+        <h2>Contact and Socials</h2>
         <div className="logos-container">
           {Socials.map((social) => 
           <div key={social.name}>
