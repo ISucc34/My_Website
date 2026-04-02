@@ -8,12 +8,20 @@ import './App.css'
 
 function App() {
 
-  const Techlogos = [
+  //Maybe implement a on click to give a list of projects that use it. 
+  // For example clicking on Node.js could do a drop down list of projects or open a new window
+  const Frameworks = [
     { name: 'TensorFlow', src: TfLogo },
     { name: 'PyCharm', src: pyCharmLogo },
     { name: 'Git', src: gitLogo },
     { name: 'VS Code', src: vsCodeLogo},
   ]
+
+  // Ex: Fusion 360, KiCAD, etc.
+  const techLogos =[
+
+  ]
+  
 
   const Socials = [
     { name: 'GitHub', src: githubLogo },
@@ -27,7 +35,7 @@ function App() {
 
         <h2>Libraries & Frameworks</h2>
         <div className="logos-container">
-          {Techlogos.map((logo) => (
+          {Frameworks.map((logo) => (
             <div key={logo.name}>
               <img src={logo.src} className='logo' alt={`${logo.name} logo`} />
             </div>
@@ -35,10 +43,20 @@ function App() {
         </div>
 
 
-
         <h2>Technologies</h2>
         
-        <h2> Projects</h2>
+        {//Add cards, with links to the github repo 
+        }
+        <h2>Projects</h2>
+        
+        <div className='projects'>
+          <div >
+            <img src="Unkown.png"/> 
+          </div>
+          <h3>Linear Algebra Library</h3>
+        </div>
+        
+        
 
 
         <h3>Contact</h3>

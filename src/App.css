@@ -18,27 +18,37 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  background-color:#222028;
-  background-image: radial-gradient(rgb(0, 0, 0),rgbx(37, 37, 45));
+  /*background-color:#222028;*/
+  /*background-image: radial-gradient(rgb(0, 0, 0),rgbx(37, 37, 45));*/
   border: 1px none;
   border-radius: 10px;
   border-width: 10px;
-  border-color: rgb(170, 170, 170);
+  /*border-color: rgb(170, 170, 170);*/
   height: 4em;
 }
 
 
 .logo:hover{
-  box-shadow:0 0 40px #b464ffaa;
-  border-color: rgb(230, 222, 222);
+  filter: drop-shadow(0 0 50px rgba(161, 95, 197, 0.8));
 
-  transition: box-shadow 300ms;
+  transition:  300ms;
   
 }
 
 
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+
+.projects{
+  gap: 10px;
+  border: 1px solid;
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  height: 4em;
+  padding: 10px;
 }
 
 @keyframes logo-spin {
@@ -56,10 +66,4 @@
   }
 }
 
-.card {
-  padding: 2em;
-}
 
-.read-the-docs {
-  color: #888;
-}
