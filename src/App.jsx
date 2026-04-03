@@ -25,9 +25,12 @@ function App() {
 
   //Add projects that you want to show you dirty little dissapointment
   const projects = [
-    {name: "Linear Algbra Library" , src: "https://github.com/ISucc34/LinAlgLibrary"},
-    {name: "Cougar AI Workshops", src: "https://github.com/ISucc34/CougarAI_Workshops"},
-    {name: "Portfolio", src: "https://github.com/ISucc34/My_Website"}
+    {name: "Linear Algbra Library" , src: "https://github.com/ISucc34/LinAlgLibrary", img: laImage,
+      desc: "A small library for experimenting with matrix and vector operations."}, 
+    {name: "Cougar AI Workshops", src: "https://github.com/ISucc34/CougarAI_Workshops", img:"",
+      desc: "Educational workshops for begginners to get hands on experience"},
+    {name: "Portfolio", src: "https://github.com/ISucc34/My_Website", img: "",
+      desc:"The website you see before you"}
   ]
   
 
@@ -61,13 +64,14 @@ function App() {
         <h2>Projects</h2>
         
         <div className='projects'>
+          {projects.map((project) =>(
           <div className='project-card'>
-            <img className='project-image' src={laImage} alt='Linear Algebra Library preview' />
+            <img className='project-image' src={project.img}/>
             <div className='project-content'>
-              <h3>Linear Algebra Library</h3>
-              <p>A small library for experimenting with matrix and vector operations.</p>
+              <h3>{project.name} </h3>
+              <p> {project.desc} </p>
             </div>
-          </div>
+          </div>))}
         </div>
         
 
