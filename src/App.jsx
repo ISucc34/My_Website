@@ -5,6 +5,8 @@ import gitLogo from './assets/Git.svg'
 import githubLogo from './assets/GitHub.svg'
 import vsCodeLogo from './assets/Visual Studio Code (VS Code).svg'
 import laImage from './assets/LA.jpeg'
+import nn from './assets/neuralNetwork.png'
+import CAI from './assets/CougarAI.jpeg'
 import './App.css'
 
 function App() {
@@ -27,7 +29,7 @@ function App() {
   const projects = [
     {name: "Linear Algbra Library" , src: "https://github.com/ISucc34/LinAlgLibrary", img: laImage,
       desc: "A small library for experimenting with matrix and vector operations."}, 
-    {name: "Cougar AI Workshops", src: "https://github.com/ISucc34/CougarAI_Workshops", img:"",
+    {name: "Cougar AI Workshops", src: "https://github.com/ISucc34/CougarAI_Workshops", img:CAI,
       desc: "Educational workshops for begginners to get hands on experience"},
     {name: "Portfolio", src: "https://github.com/ISucc34/My_Website", img: "",
       desc:"The website you see before you"}
