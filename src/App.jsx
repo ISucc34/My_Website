@@ -7,6 +7,7 @@ import vsCodeLogo from './assets/Visual Studio Code (VS Code).svg'
 import laImage from './assets/LA.jpeg'
 import nn from './assets/neuralNetwork.png'
 import CAI from './assets/CougarAI.jpeg'
+import LinIn from './assets/linkedin.svg'
 import './App.css'
 
 function App() {
@@ -15,14 +16,14 @@ function App() {
   // For example clicking on Node.js could do a drop down list of projects or open a new window
   const Frameworks = [
     { name: 'TensorFlow', src: TfLogo },
-    { name: 'PyCharm', src: pyCharmLogo },
     { name: 'Git', src: gitLogo },
-    { name: 'VS Code', src: vsCodeLogo},
+    
   ]
 
   // Ex: Fusion 360, KiCAD, etc.
   const techLogos =[
-
+    { name: 'PyCharm', src: pyCharmLogo },
+    { name: 'VS Code', src: vsCodeLogo},
   ]
 
   //Add projects that you want to show you dirty little dissapointment
@@ -38,6 +39,7 @@ function App() {
 
   const Socials = [
     { name: 'GitHub', src: githubLogo },
+    { name: "LinkedIn", src: LinIn}
   ]
 
 
@@ -57,6 +59,14 @@ function App() {
 
 
         <h2>Technologies</h2>
+        <div className="logos-container">
+          {techLogos.map((logo) =>
+          (
+            <div key={logo.name}>
+              <img src={logo.src} className='logo'/>
+            </div>
+          ))}
+        </div>
 
         
         {
