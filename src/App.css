@@ -80,6 +80,11 @@
   margin: 0;
 }
 
+.project-card:hover{
+    box-shadow: 0 0 100px rgba(161, 95, 197, 0.8);
+    transition:  300ms;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);

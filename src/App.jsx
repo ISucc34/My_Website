@@ -52,9 +52,12 @@ function App() {
 
 
         <h2>Technologies</h2>
+
         
-        {//Add cards, with links to the github repo 
+        {
+        //Add cards, with links to the github repo 
         }
+
         <h2>Projects</h2>
         
         <div className='projects'>
@@ -67,9 +70,6 @@ function App() {
           </div>
         </div>
         
-        
-
-
 
         <h2>Contact and Socials</h2>
         <div className="logos-container">
@@ -78,7 +78,6 @@ function App() {
             <img src={social.src} className="logo" alt={`${social.name} logo`}/>
           </div>)}
         </div>
-         
       </div>
       
     </>
