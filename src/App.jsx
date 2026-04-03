@@ -4,6 +4,7 @@ import pyCharmLogo from './assets/PyCharm.svg'
 import gitLogo from './assets/Git.svg'
 import githubLogo from './assets/GitHub.svg'
 import vsCodeLogo from './assets/Visual Studio Code (VS Code).svg'
+import laImage from './assets/LA.jpeg'
 import './App.css'
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
 
   ]
 
-  //Add projects that you want to show you diry little dissapointment
+  //Add projects that you want to show you dirty little dissapointment
   const projects = [
     {name: "Linear Algbra Library" , src: "https://github.com/ISucc34/LinAlgLibrary"},
     {name: "Cougar AI Workshops", src: "https://github.com/ISucc34/CougarAI_Workshops"},
@@ -57,13 +58,17 @@ function App() {
         <h2>Projects</h2>
         
         <div className='projects'>
-          <div className='imageCard'>
-            <img src="Unkown.png"/> 
+          <div className='project-card'>
+            <img className='project-image' src={laImage} alt='Linear Algebra Library preview' />
+            <div className='project-content'>
+              <h3>Linear Algebra Library</h3>
+              <p>A small library for experimenting with matrix and vector operations.</p>
+            </div>
           </div>
-          <h3>Linear Algebra Library</h3>
         </div>
         
         
+
 
 
         <h2>Contact and Socials</h2>
