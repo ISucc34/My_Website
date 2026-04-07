@@ -29,8 +29,7 @@
 
 
 .logo:hover{
-  filter: drop-shadow(0 0 50px rgba(161, 95, 197, 0.8));
-
+  filter: drop-shadow(10px 10px 0px rgba(161, 95, 197, .8));
   transition:  300ms;
   
 }
