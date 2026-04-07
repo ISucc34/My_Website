@@ -1,4 +1,5 @@
 import reactLogo from './assets/react.svg'
+import {useNavigate} from "react-dom"
 import TfLogo from './assets/TensorFlow.svg'
 import pyCharmLogo from './assets/PyCharm.svg'
 import gitLogo from './assets/Git.svg'
@@ -11,6 +12,16 @@ import LinIn from './assets/linkedin.svg'
 import './App.css'
 
 function App() {
+
+
+
+  const handleClick = () =>
+  {
+
+    window.location.href = 'https://canvas.uh.edu';
+  }
+
+
 
   //Maybe implement a on click to give a list of projects that use it. 
   // For example clicking on Node.js could do a drop down list of projects or open a new window
@@ -77,7 +88,7 @@ function App() {
         
         <div className='projects'>
           {projects.map((project) =>(
-          <div className='project-card'>
+          <div className='project-card' onClick={handleClick}>
             <img className='project-image' src={project.img}/>
             <div className='project-content'>
               <h3>{project.name} </h3>
