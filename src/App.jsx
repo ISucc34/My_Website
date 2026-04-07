@@ -13,16 +13,6 @@ import './App.css'
 
 function App() {
 
-
-
-  const handleClick = () =>
-  {
-
-    window.location.href = 'https://canvas.uh.edu';
-  }
-
-
-
   //Maybe implement a on click to give a list of projects that use it. 
   // For example clicking on Node.js could do a drop down list of projects or open a new window
   const Frameworks = [
@@ -78,7 +68,6 @@ function App() {
             </div>
           ))}
         </div>
-
         
         {
         //Add cards, with links to the github repo 
@@ -88,7 +77,7 @@ function App() {
         
         <div className='projects'>
           {projects.map((project) =>(
-          <div className='project-card' onClick={handleClick}>
+          <div className='project-card' onClick={() => window.location.href = project.src}>
             <img className='project-image' src={project.img}/>
             <div className='project-content'>
               <h3>{project.name} </h3>
