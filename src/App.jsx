@@ -39,8 +39,8 @@ function App() {
   
 
   const Socials = [
-    { name: 'GitHub', src: githubLogo },
-    { name: "LinkedIn", src: LinIn}
+    { name: 'GitHub', img: githubLogo, src: "https://github.com/ISucc34" },
+    { name: "LinkedIn", img: LinIn, src: "https://www.linkedin.com/in/isaac-gonzalez28/"}
   ]
 
 
@@ -90,8 +90,8 @@ function App() {
         <h2>Contact and Socials</h2>
         <div className="logos-container">
           {Socials.map((social) => 
-          <div key={social.name}>
-            <img src={social.src} className="logo" alt={`${social.name} logo`}/>
+          <div key={social.name} >
+            <img src={social.img} className="logo" alt={`${social.name} logo`} onClick={() => window.location.href = social.src}/>
           </div>)}
         </div>
       </div>
