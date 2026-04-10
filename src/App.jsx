@@ -1,6 +1,7 @@
 import reactLogo from './assets/react.svg'
 import {useNavigate} from "react-dom"
 import TfLogo from './assets/TensorFlow.svg'
+import DockerLogo from "./assets/Docker.svg"
 import pyCharmLogo from './assets/PyCharm.svg'
 import gitLogo from './assets/Git.svg'
 import githubLogo from './assets/GitHub.svg'
@@ -18,6 +19,9 @@ function App() {
   const Frameworks = [
     { name: 'TensorFlow', src: TfLogo },
     { name: 'Git', src: gitLogo },
+    { name: "Docker", src: DockerLogo},
+    { name: "React", src: reactLogo},
+    { name: "CLion"}
     
   ]
 
