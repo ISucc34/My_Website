@@ -20,8 +20,7 @@ function App() {
     { name: 'TensorFlow', src: TfLogo },
     { name: 'Git', src: gitLogo },
     { name: "Docker", src: DockerLogo},
-    { name: "React", src: reactLogo},
-    { name: "CLion"}
+    { name: "React", src: reactLogo}
     
   ]
 
